@@ -6,7 +6,7 @@ function redirectToUserLanguage() {
     var subUserString = userLang.substring(0, 2) 
     //     // if the userLang exists them it will redirect to the path of the language.
         if (subUserString == "fr"){
-             window.location.replace("https://www.open-mynd.com/index_fr.html");
+             window.location.replace("https://previa-medical.github.io/PREVIA-WEBSITE/index_fr.html");
     //         break;
         }// end if
 
