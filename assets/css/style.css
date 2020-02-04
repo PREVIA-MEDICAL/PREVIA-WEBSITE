@@ -118,10 +118,12 @@ input, select, textarea {
 
 		} 
 
-		.spotlight .image_couleur { display: none }
-		.spotlight .image { display: block ;
+		/* .spotlight .image_couleur { display: none } */
+		/* .spotlight .image { display: block ;
 			text-align: center;
-			}
+			} */
+			.spotlight .image { display: none }
+		.spotlight .image_couleur { display: block }
 
 		html {
 				background-color: var(--main-bg-color);
