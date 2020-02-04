@@ -119,6 +119,7 @@ input, select, textarea {
 		} 
 
 		.spotlight .image_couleur { display: none }
+		.spotlight .image { display: block }
 
 		html {
 				background-color: var(--main-bg-color);
