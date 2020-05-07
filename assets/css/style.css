@@ -305,13 +305,16 @@ input, select, textarea {
 		filter:brightness(50%);
 		top: 50%;
 		left: 50%; 
-
-	    min-width: 100%;
-	     min-height: 70%;  
-	      /* width: auto; 
-	    height: auto;  */
-	     z-index: -50;
-		 transform: translateX(-50%) translateY(-50%); 
+		width: auto;
+		height:120%;
+		 z-index: -0;
+		 transform: translateX(-50%) translateY(-55%); 
+	    /* min-width: 100%;
+	     min-height: 100%;  
+		 
+		 height: auto;*/
+	    
+		 
 		
 	 background: url('../../images/poster.jpg') no-repeat;
 	  background-size: contain;}  
@@ -3080,7 +3083,7 @@ input, select, textarea {
 		background-color: var(--main-bg-color);
 		margin-left:-8px;
 		margin-top:-8px;
-		height: 110vh;
+		height: 80vh;
 		width: 100%;
 		overflow: hidden;
 		position: relative;
@@ -4302,6 +4305,19 @@ input, select, textarea {
 				font-weight: 400;
 			}
 
+			/* video {
+				position: absolute;
+				filter:brightness(100%);
+				top: 100%;
+				left: 50%;  
+				width: 100%;
+				height: auto;
+				 z-index: -50;
+				 transform: translateX(-50%) translateY(-60%); 
+				
+			 background: url('../../images/poster.jpg') no-repeat;
+			  background-size: contain;}   */
+
 		/* Button */
 
 			input[type="submit"],
@@ -4314,7 +4330,7 @@ input, select, textarea {
 		/* Spotlight */
 
 			.spotlight .image.main {
-				max-height: 50vh;
+				max-height: 20vh;
 			}
 
 			.spotlight .content {
