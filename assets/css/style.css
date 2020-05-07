@@ -1,12 +1,11 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,400,100italic,400italic");
 
 /*
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
 
 
 html, body, div, span, applet, object,
@@ -19,7 +18,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio, video, {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -96,7 +95,7 @@ input, select, textarea {
 
 	:root {
 		--main-bg-color: #F8F8F8;
-		--main-font-color: #1c1d26;
+		--main-font-color: #333;
 		--spot-bg-color: rgba(248, 248, 248, 0.95);
 		}
 
@@ -105,14 +104,21 @@ input, select, textarea {
 		}
 
 		.spotlight .image { display: none }
-		.spotlight .image_couleur { display: block }
+		.spotlight .image_couleur { 
+			display: inline-block ; 
+			-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+			-moz-animation: fadein 2s; /* Firefox < 16 */
+			 -ms-animation: fadein 2s; /* Internet Explorer */
+			  -o-animation: fadein 2s; /* Opera < 12.1 */
+				 animation: fadein 2s;
+		}
 
 
 
 /* Dark Mode Check */
 	@media screen and (prefers-color-scheme: dark) {
 		:root {
-		--main-bg-color: #1c1d26;
+		--main-bg-color: #333;
 		--main-font-color: white;
 		--spot-bg-color: rgba(23, 24, 32, 0.85);
 
@@ -123,7 +129,8 @@ input, select, textarea {
 			text-align: center;
 			} */
 			.spotlight .image { display: none }
-		.spotlight .image_couleur { display: block }
+		.spotlight .image_couleur { display: block;
+			float: center; }
 
 		html {
 				background-color: var(--main-bg-color);
@@ -152,10 +159,11 @@ input, select, textarea {
 
 		body, input, select, textarea {
 			color: var(--main-font-color);
-			font-family: "Roboto", Helvetica, sans-serif;
-			font-size: 16pt;
+			font-family: "Montserrat";
+			font-size: 10pt;
 			font-weight: 100;
-			line-height: 1.75em;
+			line-height: 1.7em;
+			letter-spacing: 0px;
 		}
 
 		a {
@@ -185,12 +193,15 @@ input, select, textarea {
 
 		p {
 			margin: 0 0 2em 0;
+			color:#616263;
+			font-weight: 400;
+			font-size: 10pt;
 		}
 
 		h1, h2, h3, h4, h5, h6 {
 			color: var(--main-font-color);
 			font-weight: 800;
-			line-height: 1em;
+			line-height: 1.5em;
 			margin: 0 0 1em 0;
 		}
 
@@ -290,24 +301,23 @@ input, select, textarea {
 		}
 
 		 video {
-	    position: absolute;
-	    top: 50%;
-	    left: 50%;
+		position: absolute;
+		filter:brightness(50%);
+		top: 50%;
+		left: 50%; 
+
 	    min-width: 100%;
-	    min-height: 100%;
-	    width: auto;
-	    height: auto;
-	    z-index: -100;
-	    transform: translateX(-50%) translateY(-50%);
+	     min-height: 70%;  
+	      /* width: auto; 
+	    height: auto;  */
+	     z-index: -50;
+		 transform: translateX(-50%) translateY(-50%); 
+		
 	 background: url('../../images/poster.jpg') no-repeat;
-	  background-size: contain;
-	  transition: 1s opacity;
-	   filter:opacity(100%);} 
-	/*  -moz-transform:scale(1);
-	  -webkit-transform:scale(1);
-	  -o-transform:scale(1);
-	  -ms-transform:scale(1);
-	  transform:scale(1);*/
+	  background-size: contain;}  
+	   
+	  
+
 	
 	.stopfade { 
 	   opacity: .5;
@@ -2250,6 +2260,7 @@ input, select, textarea {
 		font-size: 1.1em;
 		margin-top: -0.8em;
 		line-height: 1.75em;
+		color: var(--main-font-color);
 	}
 
 	header h4 + p,
@@ -2295,7 +2306,7 @@ input, select, textarea {
 		color: var(--main-font-color);
 		display: block;
 		font-size: 0.9em;
-		font-weight: 300;
+		font-weight: 400;
 		margin: 0 0 1em 0;
 	}
 
@@ -2495,6 +2506,7 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		
 	}
 
 		.icon:before {
@@ -2507,7 +2519,8 @@ input, select, textarea {
 			line-height: 1;
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
+			font-weight: 100;
+			color : #017887;
 		}
 
 		.icon > .label {
@@ -2518,8 +2531,17 @@ input, select, textarea {
 			line-height: inherit;
 		}
 
+		
+
+
+
 		.icon.solid:before {
 			font-weight: 900 !important;
+			color : #017887;
+		}
+		.icon.solid:hover {
+			line-height: inherit;
+			color : #60b2c0;
 		}
 
 		.icon.brands:before {
@@ -2587,6 +2609,10 @@ input, select, textarea {
 				}
 
 /* Image */
+
+
+
+
 
 	.image {
 		border-radius: 4px;
@@ -2858,7 +2884,7 @@ input, select, textarea {
 		table th {
 			color: var(--main-font-color);
 			font-size: 0.9em;
-			font-weight: 300;
+			font-weight: 400;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
@@ -2915,17 +2941,17 @@ input, select, textarea {
 		border-radius: 4px;
 		border: 0;
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-		color: #94D3E0 !important;
+		color: #017887 !important;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: 300;
+		font-weight: 400;
 		height: 3em;
 		line-height: 3em;
 		padding: 0 2.25em;
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
-		box-shadow: inset 0 0 0 1px #94d4e0;
+		box-shadow: inset 0 0 0 1px #017887;
 	}
 
 		input[type="submit"]:hover, input[type="submit"]:active,
@@ -2978,7 +3004,7 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #94d4e0;
+			background-color: #60b2c0;
 			box-shadow: none;
 			color: #003E47 !important;
 		}
@@ -3048,12 +3074,14 @@ input, select, textarea {
 /* Spotlight */
 
 	.spotlight {
-		background-attachment:fixed !important;
+		/* background-attachment:fixed !important; */
 		background-position: center center;
 		background-size: cover !important;
 		background-color: var(--main-bg-color);
-	/*	box-shadow: 0 0.25em 0.5em 0 ;*/
-		height: 100vh;
+		margin-left:-8px;
+		margin-top:-8px;
+		height: 110vh;
+		width: 100%;
 		overflow: hidden;
 		position: relative;
 	}
@@ -3189,17 +3217,21 @@ input, select, textarea {
 
 		.spotlight.top .content, .spotlight.bottom .content {
 			left: 0;
-			padding: 5.1em 0 3.1em 0;
+			padding: 1em 0 1em 0;
 			width: 100%;
 		}
 
 		.spotlight.top .content {
 			border-bottom-width: 0.35em;
+			border-top-width: 0em;
 			top: 0;
 		}
 
 		.spotlight.bottom .content {
-			border-top-width: 0.35em;
+			border-top-width: 0.10em;
+			border-bottom-width: 0em;
+			border-left-width: 0em;
+			border-right-width: 0em;
 			bottom: 0;
 		}
 
@@ -3212,11 +3244,14 @@ input, select, textarea {
 
 		.spotlight.left .content {
 			border-right-width: 0.35em;
+			border-left-width: 0em;
 			left: 0;
 		}
 
 		.spotlight.right .content {
 			border-left-width: 0.35em;
+			border-right-width: 0em;
+			border-top-width: 0em;
 			right: 0;
 		}
 
@@ -3318,7 +3353,7 @@ input, select, textarea {
 			.wrapper.style2 input[type="button"].primary,
 			.wrapper.style2 .button.primary {
 				background-color: var(--main-bg-color);
-				color: #94d4e0 !important;
+				color: #017887 !important;
 			}
 
 				.wrapper.style2 input[type="submit"].primary:hover, .wrapper.style2 input[type="submit"].primary:active,
@@ -3499,6 +3534,7 @@ input, select, textarea {
 						height: inherit;
 						line-height: inherit;
 						outline: 0;
+						
 					}
 
 						#header nav ul li a.button, #header nav ul li span.button {
@@ -3532,16 +3568,16 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background-attachment: fixed;
-		background-color: var(--main-bg-color);
-		background-image: url("../../images/pic01.jpg");
-		background-position: center center;
+		/* background-attachment: fixed; */
+		/* background-color: var(--main-bg-color); */
+		/* background-image: url("../../images/pic01.jpg"); */
+		/* background-position: center center;
 		background-size: cover;
-		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-		min-height: 100vh;
-		position: relative;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25); */
+		 min-height: 100vh;
+		position: relative; 
 		text-align: center;
-		z-index: 21;
+		z-index: 21; 
 	}
 
 		#banner:before {
@@ -3556,51 +3592,111 @@ input, select, textarea {
 
 		#banner .content {
 			display: inline-block;
-			margin-right: 1%;
-			max-width: 95%;
-			padding: 6em;
+			 margin-right: 1%;
+			max-width: 80%;
 			position: relative;
 			text-align: center;
-			vertical-align:middle;
-			z-index: 1;
+			vertical-align:top;
+			z-index: 21; 
 		}
 
 			#banner .content header {
 				display: inline-block;
-				vertical-align: left;
+				text-align: center;
 			}
 
-				#banner .content header h1 {
-					font-size: 3em;
-					margin: 5em 0 0 0;
+				#banner .content header h4 {
+					font-size: 2em;
+					margin: 0em 0 0 0;
 					color:white;
-					text-align: right;
+					text-align: center;
 				}
 
 				#banner .content header p {
-					margin: 1em 0 0 0;
-					font-size: 2em;
+					margin: 0em 0 0 0;
+					font-size: 1.5em;
 					line-height: 2em;
-					top: 0;
+					top: 20;
 					color:white;
-					text-align: right;
+					text-align: center;
+					
 				}
 
 			#banner .content .image {
-				border-radius: 100%;
-				display: inline-block;
-				height: 18em;
-				margin-left: 3em;
-				vertical-align: middle;
-				width: 18em;
+				margin: 10em 0 0 0;
+				
+				text-align: center;
+					/* position: relative; */
+				
+				animation: fadeIn ease 2s;
+				-webkit-animation: fadeIn ease 2s;
+				-moz-animation: fadeIn ease 2s;
+				-o-animation: fadeIn ease 2s;
+				-ms-animation: fadeIn ease 2s;
+			  }
 
-			}
+		
+			  
+			  
+			  @keyframes fadeIn{
+				0% {
+				  opacity:0;
+				}
+				100% {
+				  opacity:1;
+				}
+			  }
+			  
+			  @-moz-keyframes fadeIn {
+				0% {
+				  opacity:0;
+				}
+				100% {
+				  opacity:1;
+				}
+			  }
+			  
+			  @-webkit-keyframes fadeIn {
+				0% {
+				  opacity:0;
+				}
+				100% {
+				  opacity:1;
+				}
+			  }
+			  
+			  @-o-keyframes fadeIn {
+				0% {
+				  opacity:0;
+				}
+				100% {
+				  opacity:1;
+				}
+			  }
+			  
+			  @-ms-keyframes fadeIn {
+				0% {
+				  opacity:0;
+				}
+				100% {
+				  opacity:1;
+				}
+			  }
+			  
+			  /* The style below is just for the appearance of the example div */
+			  
+		
 
 				#banner .content .image img {
-					border-radius: 100%;
+					-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+					-moz-animation: fadein 6s; /* Firefox < 16 */
+					 -ms-animation: fadein 6s; /* Internet Explorer */
+					  -o-animation: fadein 6s; /* Opera < 12.1 */
+						 animation: fadein 6s;/* border-radius: 100%;
 					display: block;
 					width: 100%;
-					opacity: 0.5;
+					opacity: 0.5; 
+					*/
 				}
 
 	body.is-touch #banner {
@@ -3670,9 +3766,9 @@ input, select, textarea {
 
 		/* Basic */
 
-			body, input, select, textarea {
-				font-size: 15pt;
-				/* font-weight: 100; */
+			body, input, select, textarea ,ul,li{
+				font-size: 11pt;
+				font-weight: 400;
 			}
 			.spotlight.left .content, .spotlight.right .content {
 				padding: 4.5em 2.5em;
@@ -3689,6 +3785,7 @@ input, select, textarea {
 				position: relative;
 			margin-left: auto;
 				padding-bottom: 40%; /* 16:9 */
+				filter:opacity(60%);
 				height: 0;
 			}
 			.videoWrapper iframe {
@@ -3707,7 +3804,7 @@ input, select, textarea {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 10pt;
 				/* font-weight: 100; */
 			}
 
@@ -3854,7 +3951,7 @@ input, select, textarea {
 					}
 
 					#banner .content .image {
-						margin: 0;
+						margin-top: 10em;
 					}
 
 		/* Footer */
@@ -3894,8 +3991,8 @@ input, select, textarea {
 			}
 
 			body, input, select, textarea {
-				font-size: 12pt;
-				font-weight: 300;
+				font-size: 9pt;
+				font-weight: 400;
 			}
 
 			h2 {
@@ -3904,10 +4001,13 @@ input, select, textarea {
 
 			h3 {
 				font-size: 1.2em;
+				color: var(--main-font-color);
 			}
 
 			h4 {
 				font-size: 1em;
+				font-weight:800;
+				color: var(--main-font-color);
 			}
 
 			p {
@@ -3990,19 +4090,21 @@ input, select, textarea {
 				#banner .content header h1 {
 						font-size: 3em;
 					}
-					#banner .content header h2 {
-						font-size: 1em;
+					#banner .content header h4 {
+						font-size: 1.3em;
 					}
 
 					#banner .content header p {
-						font-size: 1.5em;
+						font-size: 0.8em;
 					}
 
 
 
 					#banner .content .image {
-						height: 9em;
-						width: 9em;
+						margin-top:10em;
+
+						/* height: 9em;
+						width: 9em; */
 					}
 
 	
@@ -4112,7 +4214,7 @@ input, select, textarea {
 
 					#navPanel .link.depth-0 {
 						color: var(--main-font-color);
-						font-weight: 300;
+						font-weight: 400;
 					}
 
 					#navPanel .link .indent-1 {
@@ -4196,8 +4298,8 @@ input, select, textarea {
 			}
 
 			body, input, select, textarea {
-				font-size: 12pt;
-				font-weight: 300;
+				font-size: 9pt;
+				font-weight: 400;
 			}
 
 		/* Button */

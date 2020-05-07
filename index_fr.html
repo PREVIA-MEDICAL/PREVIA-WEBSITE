@@ -1,126 +1,130 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-            <title>PREVIA : Améliorer la détection du sepsis</title>
-            <meta name=”description” content="Application FHIR intégrée au dossier patient informatisé pour détecter les premiers signes du SEPSIS dans les hôpitaux” />
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/style.css" />
-        <link rel="icon" href="favicon.png">
-		<link rel="shortcut icon" type="TYPE_MIME" href="favicon.png">
-		<link rel="apple-touch-icon" href="appletouchicon.png">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154477048-1">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-154477048-1');
-</script>
+<head>
+	<title>PREVIA : Améliorer la détection du sepsis</title>
+	<meta name=”description” content="Application FHIR intégrée au dossier patient informatisé pour détecter les premiers signes du SEPSIS dans les hôpitaux” />
+		<meta charset=" utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="icon" href="favicon.png">
+	<link rel="shortcut icon" type="TYPE_MIME" href="favicon.png">
+	<link rel="apple-touch-icon" href="appletouchicon.png">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 
-        <!-- Start of Async Drift Code -->
-<script>
-        "use strict";
-        
-        !function() {
-          var t = window.driftt = window.drift = window.driftt || [];
-          if (!t.init) {
-            if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-            t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-            t.factory = function(e) {
-              return function() {
-                var n = Array.prototype.slice.call(arguments);
-                return n.unshift(e), t.push(n), t;
-              };
-            }, t.methods.forEach(function(e) {
-              t[e] = t.factory(e);
-            }), t.load = function(t) {
-              var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-              o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-              var i = document.getElementsByTagName("script")[0];
-              i.parentNode.insertBefore(o, i);
-            };
-          }
-        }();
-        drift.SNIPPET_VERSION = '0.3.1';
-        drift.load('rweds7g98ehb');
-        </script>
-        <!-- End of Async Drift Code -->
-        <!-- place this script tag after the Drift embed tag -->
-<script>
-        (function() {
-          /* Add this class to any elements you want to use to open Drift.
-           *
-           * Examples:
-           * - <a class="drift-open-chat">Questions? We're here to help!</a>
-           * - <button class="drift-open-chat">Chat now!</button>
-           *
-           * You can have any additional classes on those elements that you
-           * would like.
-          */
-          var DRIFT_CHAT_SELECTOR = '.drift-open-chat'
-          /* http://youmightnotneedjquery.com/#ready */
-          function ready(fn) {
-            if (document.readyState != 'loading') {
-              fn();
-            } else if (document.addEventListener) {
-              document.addEventListener('DOMContentLoaded', fn);
-            } else {
-              document.attachEvent('onreadystatechange', function() {
-                if (document.readyState != 'loading')
-                  fn();
-              });
-            }
-          }
-          /* http://youmightnotneedjquery.com/#each */
-          function forEachElement(selector, fn) {
-            var elements = document.querySelectorAll(selector);
-            for (var i = 0; i < elements.length; i++)
-              fn(elements[i], i);
-          }
-          function openSidebar(driftApi, event) {
-            event.preventDefault();
-            driftApi.sidebar.open();
-            return false;
-          }
-          ready(function() {
-            drift.on('ready', function(api) {
-              var handleClick = openSidebar.bind(this, api)
-              forEachElement(DRIFT_CHAT_SELECTOR, function(el) {
-                el.addEventListener('click', handleClick);
-              });
-            });
-          });
-        })();
-      </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154477048-1">
+	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-        
-	</head>
-	<body class="is-preload landing">
-		<div id="page-wrapper">
+		gtag('config', 'UA-154477048-1');
+	</script>
 
-			<!-- Header -->
-				<header id="header">
-					<a href="index.html" title="Accueil">
-						<span class="image_logo" ><img src="images/logo_header.png" width="130" alt="PREVIA" style="float:left;margin-left:+20px;margin-top:+12px;" />
-						</span>
-					</a>
-				
-				<nav id="nav">
+
+	<!-- Start of Async Drift Code -->
+	<script>
+		"use strict";
+
+		!function () {
+			var t = window.driftt = window.drift = window.driftt || [];
+			if (!t.init) {
+				if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+				t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+					t.factory = function (e) {
+						return function () {
+							var n = Array.prototype.slice.call(arguments);
+							return n.unshift(e), t.push(n), t;
+						};
+					}, t.methods.forEach(function (e) {
+						t[e] = t.factory(e);
+					}), t.load = function (t) {
+						var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+						o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+						var i = document.getElementsByTagName("script")[0];
+						i.parentNode.insertBefore(o, i);
+					};
+			}
+		}();
+		drift.SNIPPET_VERSION = '0.3.1';
+		drift.load('rweds7g98ehb');
+	</script>
+	<!-- End of Async Drift Code -->
+	<!-- place this script tag after the Drift embed tag -->
+	<script>
+		(function () {
+			/* Add this class to any elements you want to use to open Drift.
+			 *
+			 * Examples:
+			 * - <a class="drift-open-chat">Questions? We're here to help!</a>
+			 * - <button class="drift-open-chat">Chat now!</button>
+			 *
+			 * You can have any additional classes on those elements that you
+			 * would like.
+			*/
+			var DRIFT_CHAT_SELECTOR = '.drift-open-chat'
+			/* http://youmightnotneedjquery.com/#ready */
+			function ready(fn) {
+				if (document.readyState != 'loading') {
+					fn();
+				} else if (document.addEventListener) {
+					document.addEventListener('DOMContentLoaded', fn);
+				} else {
+					document.attachEvent('onreadystatechange', function () {
+						if (document.readyState != 'loading')
+							fn();
+					});
+				}
+			}
+			/* http://youmightnotneedjquery.com/#each */
+			function forEachElement(selector, fn) {
+				var elements = document.querySelectorAll(selector);
+				for (var i = 0; i < elements.length; i++)
+					fn(elements[i], i);
+			}
+			function openSidebar(driftApi, event) {
+				event.preventDefault();
+				driftApi.sidebar.open();
+				return false;
+			}
+			ready(function () {
+				drift.on('ready', function (api) {
+					var handleClick = openSidebar.bind(this, api)
+					forEachElement(DRIFT_CHAT_SELECTOR, function (el) {
+						el.addEventListener('click', handleClick);
+					});
+				});
+			});
+		})();
+	</script>
+
+
+</head>
+
+<body class="is-preload landing">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" title="Accueil">
+				<span class="image_logo"><img src="images/logo_header.png" width="130" alt="PREVIA"
+						style="float:left;margin-left:+20px;margin-top:+12px;" />
+				</span>
+			</a>
+
+			<nav id="nav">
+				<ul>
+					<li><a href="index_fr.html#Mission">Mission</a></li>
+					<li>
+						<a href="index_fr.html#Solutions">Solutions</a>
 						<ul>
-							<li><a href="index_fr.html#Mission">Mission</a></li>
-							<li>
-								<a href="index_fr.html#Solutions">Solutions</a>
-								<ul>
-									<li><a href="sepsis_fr.html">Sepsis</a></li>
-									<!-- <li><a href="index.html">AGENDA</a></li>
+							<li><a href="sepsis_fr.html">Sepsis</a></li>
+							<!-- <li><a href="index.html">AGENDA</a></li>
 									<li><a href="index.html">DMP PLUS</a></li>
 									<li>
 										<a href="#">Submenu</a>
@@ -131,361 +135,392 @@
 											<li><a href="#">Option 4</a></li>
 										</ul>
 									</li> -->
-								</ul>
-							</li>
-							<li><a href="index_fr.html#Technology">Technologie</a></li>
-							<li><a href="index_fr.html#Values">Valeurs</a></li>
-						<!-- 	<li><a href="#Services">Services</a></li> -->
-				
-							<li><a href="index_fr.html#Contact" class="button primary">Contact</a></li>
 						</ul>
-					</nav>
-					<a href="index_fr.html" title="Français">
-					
-							<span class="image_fr"><img src="images/france.png" width="20" alt="French flag" style="float:left;margin-top:+20px;margin-left:+20px;" />
-							</span>
-					</a>
-					<a href="index_en.html" title="English">
-							<span class="image_uk"><img src="images/uk_unselect.png" width="20" alt="UK flag" style="float:left;margin-top:+20px;margin-left:+10px;" />
-							</span>
-					</a>
+					</li>
+					<li><a href="index_fr.html#Technology">Technologie</a></li>
+					<li><a href="index_fr.html#Values">Valeurs</a></li>
+					<!-- 	<li><a href="#Services">Services</a></li> -->
+
+					<li><a href="index_fr.html#Contact" class="button primary">Contact</a></li>
+				</ul>
+			</nav>
+			<a href="index_fr.html" title="Français">
+
+				<span class="image_fr"><img src="images/france.png" width="20" alt="French flag"
+						style="float:left;margin-top:+20px;margin-left:+20px;" />
+				</span>
+			</a>
+			<a href="index_en.html" title="English">
+				<span class="image_uk"><img src="images/uk_unselect.png" width="20" alt="UK flag"
+						style="float:left;margin-top:+20px;margin-left:+10px;" />
+				</span>
+			</a>
+		</header>
+
+		<!-- Banner -->
+		<section id="banner">
+			<video poster="images/poster.jpg" id="bgvid" playsinline autoplay muted loop>
+				<source src="images/video_background.mp4" type="video/mp4">
+			</video>
+			<div class="content">
+
+				<header>
+					<span class="image"><img src="images/logo_previa_blanc.png" width="300" alt=""
+							style="float:inherit;" /></span>
+					<!-- <h1>L'intelligence qui veille.</h1> -->
+					<h4>L'intelligence artificielle qui détecte les risques de complication des patients</h4>
+					<p>Compatible avec les dossiers patients des principaux éditeurs grâce à la technologie FHIR </p>
 				</header>
 
-			<!-- Banner -->
-				<section id="banner">
+			</div>
+			<a href="#Mission" class="goto-next scrolly">Next</a>
+		</section>
 
-					<div class="content">
-					
-						<header>
+		<!-- One -->
+		<section id="Mission" class="spotlight style1 bottom">
+
+			<span class="image fit main"><img src="images/pic02.jpg" alt=""
+					style="background-attachment: fixed!important;" /></span>
+			<div class="content">
+
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<section class="col-3 col-12-medium" style="text-align:center; margin:auto">
 							
-							<h1>L'Intelligence Artificielle de Prévention</h1>
-							<p>Nous développons des outils de prédiction pour améliorer la prévention dans les organisations de santé.</p>
-						</header>
-				
-					</div>
-					<a href="#Mission" class="goto-next scrolly">Next</a>
-				</section>
-
-			<!-- One -->
-				<section id="Mission" class="spotlight style1 bottom">
-					
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" style="background-attachment: fixed!important;"/></span>
-					<div class="content">
+								<div class="image"><img src="images/logo.png" width="250" alt="" /></div>
+								<div class="image_couleur float-center"><img src="images/logo_312_color.png" width="250" alt=""/></div>
 							
-						<div class="container">
-							<div class="row">
-								<div class="col-4 col-12-medium">
-									<header>
-										<span class="image"><img src="images/logo.png" width="312"  alt="" style="float:inherit;"/></span>
-										<span class="image_couleur"><img src="images/logo_312_color.png" width="312"  alt="" style="float:inherit;"/></span>
-									</header>
-								</div>
-								<div class="col-4 col-12-medium">
-									<p>Grâce à la nouvelle technologie FHIR ©, nos applications de prévention en santé se connectent plus simplement 
-                                        aux données du dossier patient informatisé et identifient les risques de complication avec précision.  
-                                         </p>
-								</div>
-								<div class="col-4 col-12-medium">
-									<p>	Dès les premiers signes, les professionnels de santé sont alertés et peuvent déclencher les protocoles de prévention. 
-										Nos solutions permettent de réduire les durées de séjour, les taux de réadmission et de sauver des vies.</p>
-								</div>
-							</div>
-						</div>
+						</section>
+						<section class="col-3 col-12-medium" style="text-align:center;margin:auto">
+							<span class="icon solid fa-search fa-2x"></span>
+							<h4></h4><h4>Détecter</h4>
+							<p>PREVIA analyse les données de milliers de patients en temps réel et identifie avec
+								précision et les risques de complication.
+							</p>
+						</section>
+						<section class="col-3 col-12-medium" style="text-align:center;margin:auto">
+							<span class="icon solid fa-bell fa-2x"></span>
+							<h4></h4><h4>Alerter</h4>
+							<p> Grâce à un algorithme prédictif utilisant les dernières techniques de machine learning,
+								elle alerte jusqu'à 6h avant les premiers symptômes.</p>
+						</section>
+
+						<section class="col-3 col-12-medium" style="text-align:center;margin:auto">
+							<span class="icon solid fa-medkit fa-2x"></span>
+							<h4></h4><h4>Soigner</h4>
+							<p> Les professionels de santé démarrent les traitements plus tôt permettant de réduire les durées de séjour et diminuer le taux de mortalité</p>
+						</section>
 					</div>
-					<a href="#Solutions" class="goto-next scrolly">Next</a>
-				</section>
+				</div>
+			</div>
+			<a href="#Solutions" class="goto-next scrolly">Next</a>
+		</section>
 
-			<!-- Two -->
-				
+		<!-- Two -->
 
-			<!-- Three -->
-				<section id="Solutions" class="spotlight style3 left">
-				
-					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
 
-						<!-- <video poster="images/poster.jpg" id="bgvid" playsinline autoplay muted loop>
-						<source src="images/video_background.mp4" type="video/mp4">
-						</video> -->
-					<div class="content">
-						<header>
-							<h2>Solutions</h2>
-						</header>
-				
-						<h3>Prévention SEPSIS</h3>
-							<p> Nous construisons une solution permettant de détecter les premiers signes de sepsis.
+		<!-- Three -->
+		<section id="Solutions" class="spotlight style3 left">
 
-							<h3>Pourquoi ?</h3>
-							<p> Un algorithme précis et des alertes en temps réel peuvent réduire la durée de séjour et le taux de mortalité de manière significative.
-								
+			<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
+
+
+			<div class="content">
+				<header>
+					<h2>Solutions</h2>
+				</header>
+
+				<h3>Prévention SEPSIS</h3>
+				<p> L'intelligence artificielle qui détecte les premiers signes de sepsis compatible avec les principaux éditeurs de dossier médical du marché grâce à la technologie FHIR
+
+					<h3>Pourquoi ?</h3>
+					<p> Un algorithme précis et des alertes en temps réel permettent de réduire la durée de séjour et le taux
+						de mortalité de manière significative.
+
 						<ul class="actions">
 							<li><a href="sepsis_fr.html" class="button">En savoir plus</a></li>
 						</ul>
+			</div>
+			<a href="#Project" class="goto-next scrolly">Next</a>
+		</section>
+		<section id="Technology" class="wrapper style1 special fade-up">
+
+			<div class="x">
+				<header class="major">
+					<span class="logo_fhir"><img src="images/fhir-logo-www.png" width="130" alt="FHIR_logo"
+							style="float:middle;" /></span>
+					<h2>La nouvelle technologie FHIR</h2>
+
+				</header>
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<section class="col-4 col-6-medium col-12-xsmall">
+							<span class="icon solid alt major fa-file"></span>
+							<h3>FHIR est un standard</h3>
+							<p>HL7 FHIR est le nouveau standard international permettant à des applications tierces
+								d'accéder aux données du Dossier Patient Informatisé.</p>
+						</section>
+						<section class="col-4 col-6-medium col-12-xsmall">
+							<span class="icon solid alt major fa-comment"></span>
+							<h3>FHIR est une communauté</h3>
+							<p>FHIR est une communauté internationale de developpeurs qui partagent des outils, du code
+								et des connaissances.</p>
+						</section>
+						<section class="col-4 col-6-medium col-12-xsmall">
+							<span class="icon solid alt major fa-flask"></span>
+							<h3>FHIR est un écosystème</h3>
+							<p> FHIR permet l'emergence de gallerie d'application comme <a
+									href="https://gallery.smarthealthit.org">SMART on FHIR.</a> </p>
+						</section>
+						<section class="col-4 col-6-medium col-12-xsmall">
+							<span class="icon solid alt major fa-paper-plane"></span>
+							<h3>FHIR est en plein développement</h3>
+							<p>Le projet Argonaut regroupe les principaux acteurs américains : Accenture, Apple, Cerner,
+								Epic et des établissements de santé pour accélérer l'utilisation de FHIR.</p>
+						</section>
+						<section class="col-4 col-6-medium col-12-xsmall">
+							<span class="icon solid alt major fa-folder-open"></span>
+							<h3>FHIR est ouvert</h3>
+							<p>Les spécifications FHIR sont open source et disponible sur le site <a
+									href="https://www.hl7.org/fhir/">HL7 FHIR.</a></p>
+						</section>
+						<section class="col-4 col-6-medium col-12-xsmall">
+							<span class="icon solid alt major fa-lock"></span>
+							<h3>FHIR est sécurisé</h3>
+							<p>Les utilisateurs et clients qui accèdent aux données doivent être authenthifiés. Nous
+								recommandons OPenID Connect et OAuth en utilisant le profil Smart on FHIR.</p>
+						</section>
+
 					</div>
-					<a href="#Project" class="goto-next scrolly">Next</a>
-				</section>
-				<section id="Technology" class="wrapper style1 special fade-up">
-					
-					<div class="x">
-						<header class="major">
-							<span class="logo_fhir"><img src="images/fhir-logo-www.png" width="130" alt="FHIR_logo" style="float:middle;" /></span>
-							<h2>La nouvelle technologie FHIR</h2> 
-							
-						</header>
-						<div class="box alt">
-							<div class="row gtr-uniform">
-								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-file"></span>
-									<h3>FHIR est un standard</h3>
-									<p>HL7 FHIR est le nouveau standard international permettant à des applications tierces d'accéder aux données du Dossier Patient Informatisé.</p>
-								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-comment"></span>
-									<h3>FHIR est une communauté</h3>
-									<p>FHIR est une communauté internationale de developpeurs qui partagent des outils, du code et des connaissances.</p>
-								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-flask"></span>
-									<h3>FHIR est un écosystème</h3>
-									<p> FHIR permet l'emergence de gallerie d'application comme <a href="https://gallery.smarthealthit.org">SMART on FHIR.</a> </p> 
-								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-paper-plane"></span>
-									<h3>FHIR est en plein développement</h3>
-									<p>Le projet Argonaut regroupe les principaux acteurs américains : Accenture, Apple, Cerner, Epic et des établissements de santé pour accélérer l'utilisation de FHIR.</p>
-								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-folder-open"></span>
-									<h3>FHIR est ouvert</h3>
-									<p>Les spécifications FHIR sont open source et disponible sur le site <a href="https://www.hl7.org/fhir/">HL7 FHIR.</a></p>
-								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-lock"></span>
-									<h3>FHIR est sécurisé</h3>
-									<p>Les utilisateurs et clients qui accèdent aux données doivent être authenthifiés. Nous recommandons OPenID Connect et OAuth en utilisant le profil Smart on FHIR.</p>
-								</section>
+				</div>
 
-							</div>
-						</div>
-						
-					<!-- 	Script for dynamic FHIR MAPS -->
-								<script type='text/javascript' src='https://www.google.com/jsapi'></script>
-								<script type='text/javascript'>google.load('visualization', '1', {'packages': ['geochart']});
-								google.setOnLoadCallback(drawVisualization);
+				<!-- 	Script for dynamic FHIR MAPS -->
+				<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+				<script type='text/javascript'>google.load('visualization', '1', { 'packages': ['geochart'] });
+					google.setOnLoadCallback(drawVisualization);
 
-								  function drawVisualization() {var data = new google.visualization.DataTable();
+					function drawVisualization() {
+						var data = new google.visualization.DataTable();
 
-								 data.addColumn('string', 'Country');
-								 data.addColumn('number', 'Value');
-								 data.addColumn({type:'string', role:'tooltip'});var ivalue = new Array();
+						data.addColumn('string', 'Country');
+						data.addColumn('number', 'Value');
+						data.addColumn({ type: 'string', role: 'tooltip' }); var ivalue = new Array();
 
-									 data.addRows([[{v:'US',f:'United States of America'},0,'438 Projects']]);
-									 ivalue['US'] = '';
+						data.addRows([[{ v: 'US', f: 'United States of America' }, 0, '517 Projects']]);
+						ivalue['US'] = '';
 
-									 data.addRows([[{v:'GB',f:'United Kingdom'},1,'113 Projects']]);
-									 ivalue['GB'] = '';
+						data.addRows([[{ v: 'GB', f: 'United Kingdom' }, 1, '133 Projects']]);
+						ivalue['GB'] = '';
 
-									 data.addRows([[{v:'DE',f:'Germany'},2,'289 Projects']]);
-									 ivalue['DE'] = '';
+						data.addRows([[{ v: 'DE', f: 'Germany' }, 2, '471 Projects']]);
+						ivalue['DE'] = '';
 
-									 data.addRows([[{v:'FR',f:'France'},3,'34 Projects']]);
-									 ivalue['FR'] = '';
+						data.addRows([[{ v: 'FR', f: 'France' }, 3, '40 Projects']]);
+						ivalue['FR'] = '';
 
-									 data.addRows([[{v:'ES',f:'Spain'},4,'20 Projects']]);
-									 ivalue['ES'] = '';
+						data.addRows([[{ v: 'ES', f: 'Spain' }, 4, '33 Projects']]);
+						ivalue['ES'] = '';
 
-									 data.addRows([[{v:'CA',f:'Canada'},5,'106 Projects']]);
-									 ivalue['CA'] = '';
+						data.addRows([[{ v: 'CA', f: 'Canada' }, 5, '122 Projects']]);
+						ivalue['CA'] = '';
 
-									 data.addRows([[{v:'IT',f:'Italy'},6,'17 Projects']]);
-									 ivalue['IT'] = '';
+						data.addRows([[{ v: 'IT', f: 'Italy' }, 6, '25 Projects']]);
+						ivalue['IT'] = '';
 
-									 data.addRows([[{v:'NL',f:'The Netherlands'},7,'129 Projects']]);
-									 ivalue['NL'] = '';
+						data.addRows([[{ v: 'NL', f: 'The Netherlands' }, 7, '170 Projects']]);
+						ivalue['NL'] = '';
 
-									 data.addRows([[{v:'BR',f:'Brazil'},8,'11 Projects']]);
-									 ivalue['BR'] = '';
+						data.addRows([[{ v: 'BR', f: 'Brazil' }, 8, '21 Projects']]);
+						ivalue['BR'] = '';
 
-									 data.addRows([[{v:'TR',f:'Turkey'},9,'4 Projects']]);
-									 ivalue['TR'] = '';
+						data.addRows([[{ v: 'TR', f: 'Turkey' }, 9, '5 Projects']]);
+						ivalue['TR'] = '';
 
-									 data.addRows([[{v:'IN',f:'India'},10,'69 Projects']]);
-									 ivalue['IN'] = '';
+						data.addRows([[{ v: 'IN', f: 'India' }, 10, '102 Projects']]);
+						ivalue['IN'] = '';
 
-									 data.addRows([[{v:'RU',f:'Russia'},11,'16 Projects']]);
-									 ivalue['RU'] = '';
+						data.addRows([[{ v: 'RU', f: 'Russia' }, 11, '18 Projects']]);
+						ivalue['RU'] = '';
 
-									 data.addRows([[{v:'AU',f:'Australia'},12,'43 Projects']]);
-									 ivalue['AU'] = '';
+						data.addRows([[{ v: 'AU', f: 'Australia' }, 12, '51 Projects']]);
+						ivalue['AU'] = '';
 
-									 data.addRows([[{v:'CN',f:'China'},13,'24 Projects']]);
-									 ivalue['AU'] = '';
+						data.addRows([[{ v: 'CN', f: 'China' }, 13, '34 Projects']]);
+						ivalue['AU'] = '';
 
-									  data.addRows([[{v:'AR',f:'Argentina'},14,'10 Projects']]);
-									 ivalue['AU'] = '';
+						data.addRows([[{ v: 'AR', f: 'Argentina' }, 14, '15 Projects']]);
+						ivalue['AU'] = '';
 
-									  data.addRows([[{v:'CL',f:'Chile'},15,'39 Projects']]);
-									 ivalue['AU'] = '';
+						data.addRows([[{ v: 'CL', f: 'Chile' }, 15, '61 Projects']]);
+						ivalue['AU'] = '';
 
-									  data.addRows([[{v:'CH',f:'Switzerland'},16,'20 Projects']]);
-									 ivalue['AU'] = '';
+						data.addRows([[{ v: 'CH', f: 'Switzerland' }, 16, '25 Projects']]);
+						ivalue['AU'] = '';
 
-									   data.addRows([[{v:'SE',f:'Sweden'},17,'71 Projects']]);
-									 ivalue['AU'] = '';
+						data.addRows([[{ v: 'SE', f: 'Sweden' }, 17, '89 Projects']]);
+						ivalue['AU'] = '';
 
 
-									   data.addRows([[{v:'NO',f:'Norway'},18,'52 Projects']]);
-									 ivalue['AU'] = '';
+						data.addRows([[{ v: 'NO', f: 'Norway' }, 18, '62 Projects']]);
+						ivalue['AU'] = '';
 
 
-									   data.addRows([[{v:'FI',f:'Finland'},19,'31 Projects']]);
-									 ivalue['AU'] = '';
+						data.addRows([[{ v: 'FI', f: 'Finland' }, 19, '36 Projects']]);
+						ivalue['AU'] = '';
 
-								 var options1 = {
-								 backgroundColor: {fill:'transparent',stroke:'#FFFFFF',strokeWidth:0 },
-								 colorAxis:  {minValue: 0, maxValue: 19,  colors: ['#D95F0E','#D95F0E','#D95F0E','#FEC44F','#FEC44F','#D95F0E','#FFF7BC','#D95F0E','#FFF7BC','#FFF7BC','#D95F0E','#FFF7BC','#FEC44F','#FEC44F','#FFF7BC','#FEC44F','#FEC44F','#D95F0E','#D95F0E','#FEC44F']},
-								 legend: 'none',
-								 backgroundColor: {fill:'transparent',stroke:'#FFFFFF' ,strokeWidth:0 },
-								 datalessRegionColor: '#FFFFFF',
-								 displayMode: 'regions',
-								 enableRegionInteractivity: 'true',
-								 resolution: 'countries',
-								 sizeAxis: {minValue: 1, maxValue:1,minSize:10,  maxSize: 10},
-								 region:'world',
-								 keepAspectRatio: true,
-								
-							
-								 tooltip: {textStyle: {color: '#444444'}, trigger:'focus'}
-								 };
+						var options1 = {
+							backgroundColor: { fill: 'transparent', stroke: '#FFFFFF', strokeWidth: 0 },
+							colorAxis: { minValue: 0, maxValue: 19, colors: ['#D95F0E', '#D95F0E', '#D95F0E', '#FEC44F', '#FEC44F', '#D95F0E', '#FFF7BC', '#D95F0E', '#FFF7BC', '#FFF7BC', '#D95F0E', '#FFF7BC', '#FEC44F', '#FEC44F', '#FFF7BC', '#FEC44F', '#FEC44F', '#D95F0E', '#D95F0E', '#FEC44F'] },
+							legend: 'none',
+							backgroundColor: { fill: 'transparent', stroke: '#FFFFFF', strokeWidth: 0 },
+							datalessRegionColor: '#FFFFFF',
+							displayMode: 'regions',
+							enableRegionInteractivity: 'true',
+							resolution: 'countries',
+							sizeAxis: { minValue: 1, maxValue: 1, minSize: 10, maxSize: 10 },
+							region: 'world',
+							keepAspectRatio: true,
 
-								  var options2 = {
-								 backgroundColor: {fill:'transparent',stroke:'#FFFFFF',strokeWidth:0 },
-								 colorAxis:  {minValue: 0, maxValue: 19,  colors: ['#D95F0E','#D95F0E','#D95F0E','#FEC44F','#FEC44F','#D95F0E','#FFF7BC','#D95F0E','#FFF7BC','#FFF7BC','#D95F0E','#FFF7BC','#FEC44F','#FEC44F','#FFF7BC','#FEC44F','#FEC44F','#D95F0E','#D95F0E','#FEC44F']},
-								 legend: 'none',
-								 backgroundColor: {fill:'transparent',stroke:'#FFFFFF' ,strokeWidth:0 },
-								 datalessRegionColor: '#FFFFFF',
-								 displayMode: 'regions',
-								 enableRegionInteractivity: 'true',
-								 resolution: 'countries',
-								 sizeAxis: {minValue: 1, maxValue:1,minSize:10,  maxSize: 10},
-								 region:'world',
-								 keepAspectRatio: true,
-								 width:150,
-								 height:50,
-								 tooltip: {textStyle: {color: '#444444'}, trigger:'focus'}
-								 };
 
-								  var chart = new google.visualization.GeoChart(document.getElementById('visualization'));
-								 chart.draw(data, options1);
-								 }
-								 </script>
-								 <div align="center"> <div id='visualization' style="width: 80%;" ></div>
-								 </div>
-									<strong>Les projets FHIR dans le monde en 2019
-									</strong>
-									<p>(Source : <a href="https://simplifier.net">Simplifier.NET)</a></p>
-						<footer class="major">
-							<ul class="actions special">
-								<!-- <li><a href="#Contact" class="button">Read More</a></li> -->
-							</ul>
-						</footer>
-					</div>
-				</section>
+							tooltip: { textStyle: { color: '#444444' }, trigger: 'focus' }
+						};
 
-				<section id="Project" class="wrapper style1 special fade-up">
-						<div class="x">
-							<header class="major">
-								<h2>La méthodologie projet</h2> 
-							</header>
-							<!-- <div class="videoWrapper">
+						var options2 = {
+							backgroundColor: { fill: 'transparent', stroke: '#FFFFFF', strokeWidth: 0 },
+							colorAxis: { minValue: 0, maxValue: 19, colors: ['#D95F0E', '#D95F0E', '#D95F0E', '#FEC44F', '#FEC44F', '#D95F0E', '#FFF7BC', '#D95F0E', '#FFF7BC', '#FFF7BC', '#D95F0E', '#FFF7BC', '#FEC44F', '#FEC44F', '#FFF7BC', '#FEC44F', '#FEC44F', '#D95F0E', '#D95F0E', '#FEC44F'] },
+							legend: 'none',
+							backgroundColor: { fill: 'transparent', stroke: '#FFFFFF', strokeWidth: 0 },
+							datalessRegionColor: '#FFFFFF',
+							displayMode: 'regions',
+							enableRegionInteractivity: 'true',
+							resolution: 'countries',
+							sizeAxis: { minValue: 1, maxValue: 1, minSize: 10, maxSize: 10 },
+							region: 'world',
+							keepAspectRatio: true,
+							width: 150,
+							height: 50,
+							tooltip: { textStyle: { color: '#444444' }, trigger: 'focus' }
+						};
+
+						var chart = new google.visualization.GeoChart(document.getElementById('visualization'));
+						chart.draw(data, options1);
+					}
+				</script>
+				<div align="center">
+					<div id='visualization' style="width: 80%;"></div>
+				</div>
+				<strong>Les projets FHIR dans le monde en 2020
+				</strong>
+				<p>(Source : <a href="https://simplifier.net">Simplifier.NET)</a></p>
+				<footer class="major">
+					<ul class="actions special">
+						<!-- <li><a href="#Contact" class="button">Read More</a></li> -->
+					</ul>
+				</footer>
+			</div>
+		</section>
+
+		<section id="Project" class="wrapper style1 special fade-up">
+			<div class="x">
+				<header class="major">
+					<h2>La méthodologie projet</h2>
+				</header>
+				<!-- <div class="videoWrapper">
 									<iframe width=70% height:"auto" src="https://www.youtube.com/embed/AEGUCpxwAlE?;autoplay=1&controls=1&loop=1&showinfo=0&mute=1&cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div> -->
-							<div class="box alt">
-								<div class="row gtr-uniform">
-									<section class="col-4 col-6-medium col-12-xsmall">
-										<span class="icon solid alt major fa-vector-square"></span>
-										<h3>Le périmètre</h3>
-										<p>Nous cadrons et validons ensemble les objectifs que nous souhaitons atteindre.</p>
-									</section>
-									<section class="col-4 col-6-medium col-12-xsmall">
-										<span class="icon solid alt major fa-tools"></span>
-										<h3>L'implémentation</h3>
-										<p>Nous implémentons, testons et déployons en production la solution.</p>
-									</section>
-									<section class="col-4 col-6-medium col-12-xsmall">
-										<span class="icon solid alt major fa-poll"></span>
-										<h3>Le résultat</h3>
-										<p>Nous mesurons les bénéfices pour votre organisation de santé dans l'objectif d'une publication.
-										</p>
-								</div>
-							</div>
-						</div>
-				</section>
-				<section id="Values" class="spotlight style2 right">
-					
-				<span class="image fit main bottom"><img src="images/pic03.jpg" alt="" /></span>
-					<div class="content">
-						<header>
-							<h2>Valeurs</h2>
-						</header>
-						<p>
-							<strong>Créativité</strong><br>
-							Nous encourageons les esprits ouverts et innovants. <br>
-							<br><strong>Sécurité</strong><br>
-							Nous suivons les bonnes pratiques de confidentialité et de sécurité. <br>
-							<br><strong>Conviction</strong><br>
-							Nous sommes convaincus que les nouvelles technologies peuvent aider à prévenir des maladies et sauver des vies.<br>
-							<br><strong>Engagement</strong><br>
-							Nous nous engageons à obtenir les résultats attendus. <br>
-						</p>
-					<!-- 	<ul class="actions">
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<section class="col-4 col-6-medium col-12-xsmall">
+							<span class="icon solid alt major fa-vector-square"></span>
+							<h3>Le périmètre</h3>
+							<p>Nous cadrons et validons ensemble les objectifs que nous souhaitons atteindre.</p>
+						</section>
+						<section class="col-4 col-6-medium col-12-xsmall">
+							<span class="icon solid alt major fa-tools"></span>
+							<h3>L'implémentation</h3>
+							<p>Nous implémentons, testons et déployons en production la solution.</p>
+						</section>
+						<section class="col-4 col-6-medium col-12-xsmall">
+							<span class="icon solid alt major fa-poll"></span>
+							<h3>Le résultat</h3>
+							<p>Nous mesurons les bénéfices pour votre organisation de santé dans l'objectif d'une
+								publication.
+							</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="Values" class="spotlight style2 right">
+
+			<span class="image fit main bottom"><img src="images/pic03.jpg" alt="" /></span>
+			<div class="content">
+				<header>
+					<h2>Valeurs</h2>
+				</header>
+				<p>
+					<strong>Créativité</strong><br>
+					Nous encourageons les esprits ouverts et innovants. <br>
+					<br><strong>Sécurité</strong><br>
+					Nous suivons les bonnes pratiques de confidentialité et de sécurité. <br>
+					<br><strong>Conviction</strong><br>
+					Nous sommes convaincus que les nouvelles technologies peuvent aider à prévenir des maladies et
+					sauver des vies.<br>
+					<br><strong>Engagement</strong><br>
+					Nous nous engageons à obtenir les résultats attendus. <br>
+				</p>
+				<!-- 	<ul class="actions">
 							<li><a href="#" class="button">Learn More</a></li>
 						</ul> -->
-					</div>
-					<a href="#Technology" class="goto-next scrolly">Next</a>
-				</section>
-			
-				
+			</div>
+			<a href="#Technology" class="goto-next scrolly">Next</a>
+		</section>
 
-			<!-- Five -->
-				<section id="Contact" class="wrapper style1 special fade-up">
-					<div class="container">
-						<header>
-                            <h2>Contact</h2>
-                            </header>
-                            <p>Si vous êtes interessés par nos services, vous pouvez nous contacter : </br>
-                                par messagerie instantanée en cliquant <a <span class="drift-open-chat">ici</span></a>
-                                ou nous envoyer un email à l'adresse : <a href="mailto:info@previa-medical.com">info@previa-medical.com</a> </p>
-					
-					
-					</div>
-				</section>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/quentin-francois-b950629" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="mailto:info@previa-medical.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; PREVIA. Tous droits reservés.</li>
-						
-							<script type="text/javascript">document.write( new Date().getFullYear() );</script>
-                            <li>Langue : </li><a href="index_fr.html">Français    </a><a href="index_en.html">English</a>
-                    </ul>
-                    
-				</footer>
 
-		</div>
+		<!-- Five -->
+		<section id="Contact" class="wrapper style1 special fade-up">
+			<div class="container">
+				<header>
+					<h2>Contact</h2>
+				</header>
+				<p>Si vous êtes interessés par nos services, vous pouvez nous contacter : </br>
+					par messagerie instantanée en cliquant <a <span class="drift-open-chat">ici</span></a>
+					ou nous envoyer un email à l'adresse : <a
+						href="mailto:info@previa-medical.com">info@previa-medical.com</a> </p>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
-	</body>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/quentin-francois-b950629"
+						class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				<li><a href="mailto:info@previa-medical.com" class="icon solid alt fa-envelope"><span
+							class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; PREVIA. Tous droits reservés.</li>
+
+				<script type="text/javascript">document.write(new Date().getFullYear());</script>
+				<li>Langue : </li><a href="index_fr.html">Français </a><a href="index_en.html">English</a>
+			</ul>
+
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
