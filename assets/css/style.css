@@ -3692,10 +3692,10 @@ input, select, textarea {
 
 				#banner .content .image img {
 				
-					display: block;
+					/* display: block;
 					width: 100%;
-					opacity: 0.5; 
-					*/
+					opacity: 0.5;  */
+					
 				}
 
 	body.is-touch #banner {
