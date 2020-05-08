@@ -309,6 +309,11 @@ input, select, textarea {
 		height:120%;
 		 z-index: -0;
 		 transform: translateX(-50%) translateY(-55%); 
+		 /* animation: fadeIn ease 2s; */
+				/* -webkit-animation: fadeIn ease 2s;
+				-moz-animation: fadeIn ease 2s;
+				-o-animation: fadeIn ease 2s;
+				-ms-animation: fadeIn ease 2s; */
 	    /* min-width: 100%;
 	     min-height: 100%;  
 		 
@@ -3631,11 +3636,11 @@ input, select, textarea {
 				text-align: center;
 					/* position: relative; */
 				
-				animation: fadeIn ease 2s;
+				/* animation: fadeIn ease 2s;
 				-webkit-animation: fadeIn ease 2s;
 				-moz-animation: fadeIn ease 2s;
 				-o-animation: fadeIn ease 2s;
-				-ms-animation: fadeIn ease 2s;
+				-ms-animation: fadeIn ease 2s; */
 			  }
 
 		
