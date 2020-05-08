@@ -315,8 +315,8 @@ input, select, textarea {
 		 height: auto;*/
 	    
 		 
-		
-	 background: url('../../images/poster.jpg') no-repeat;
+		background-color: #272833;
+	 /* background: url('../../images/poster.jpg') no-repeat; */
 	  background-size: contain;}  
 	   
 	  
