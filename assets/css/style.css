@@ -306,7 +306,7 @@ input, select, textarea {
 		top: 50%;
 		left: 50%; 
 		width: auto;
-		height:120%;
+		height:110%;
 		 z-index: -0;
 		 transform: translateX(-50%) translateY(-55%); 
 		 /* animation: fadeIn ease 2s; */
