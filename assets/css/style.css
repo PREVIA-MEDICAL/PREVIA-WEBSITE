@@ -1,11 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,400,100italic,400italic");
 
-/*
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 
 html, body, div, span, applet, object,
@@ -191,10 +186,19 @@ input, select, textarea {
 			font-style: italic;
 		}
 
-		p {
+		p, li {
 			margin: 0 0 2em 0;
 			color:#616263;
 			font-weight: 400;
+			font-size: 10pt;
+		}
+
+		li {
+			margin: 0 0 0 0;
+			color:#616263;
+			line-height: 2em;
+			letter-spacing: 0;
+			font-weight: 100;
 			font-size: 10pt;
 		}
 
@@ -309,15 +313,9 @@ input, select, textarea {
 		height:110%;
 		 z-index: -0;
 		 transform: translateX(-50%) translateY(-55%); 
-		 /* animation: fadeIn ease 2s; */
-				/* -webkit-animation: fadeIn ease 2s;
-				-moz-animation: fadeIn ease 2s;
-				-o-animation: fadeIn ease 2s;
-				-ms-animation: fadeIn ease 2s; */
-	    /* min-width: 100%;
-	     min-height: 100%;  
-		 
-		 height: auto;*/
+
+	
+
 	    
 		 
 		background-color: #272833;
@@ -2547,10 +2545,10 @@ input, select, textarea {
 			font-weight: 900 !important;
 			color : #017887;
 		}
-		.icon.solid:hover {
+		/* .icon.solid:hover {
 			line-height: inherit;
 			color : #60b2c0;
-		}
+		} */
 
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands' !important;
@@ -3086,10 +3084,10 @@ input, select, textarea {
 		background-position: center center;
 		background-size: cover !important;
 		background-color: var(--main-bg-color);
-		margin-left:-8px;
-		margin-top:-8px;
+		 margin-left:-8px;
+		margin-top:-8px; 
 		height: 80vh;
-		width: 100%;
+		width: auto;
 		overflow: hidden;
 		position: relative;
 	}
@@ -4286,7 +4284,7 @@ input, select, textarea {
 				margin: 0 auto;
 				background-color: #FFFFFF;
 				width: 71.3%;
-				height: 25vh;
+				height: 20vh;
 			}
 
 	}

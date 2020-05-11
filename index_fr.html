@@ -4,7 +4,9 @@
 
 <head>
 	<title>PREVIA : Améliorer la détection du sepsis</title>
-	<meta name=”description” content="Application FHIR intégrée au dossier patient informatisé pour détecter les premiers signes du SEPSIS dans les hôpitaux” />
+	<meta name="Description" 
+	content="Application FHIR intégrée au dossier patient informatisé pour détecter les premiers signes du SEPSIS dans les hôpitaux"
+	 />
 		<meta charset=" utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/style.css" />
@@ -18,7 +20,7 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154477048-1">
 	</script>
-	<script>
+	<script async>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
@@ -28,7 +30,7 @@
 
 
 	Start of Async Drift Code
-	<!-- <script>
+	<script async>
 		"use strict";
 
 		!function () {
@@ -53,10 +55,10 @@
 		}();
 		drift.SNIPPET_VERSION = '0.3.1';
 		drift.load('rweds7g98ehb');
-	</script> -->
+	</script>
 	<!-- End of Async Drift Code -->
 	<!-- place this script tag after the Drift embed tag -->
-	<!-- <script>
+	<script async>
 		(function () {
 			/* Add this class to any elements you want to use to open Drift.
 			 *
@@ -101,7 +103,7 @@
 				});
 			});
 		})();
-	</script> -->
+	</script>
 
 
 </head>
@@ -159,7 +161,7 @@
 
 		<!-- Banner -->
 		<section id="banner">
-			<video poster="" id="bgvid" playsinline autoplay muted loop>
+			<video poster="" id="video" playsinline autoplay muted loop>
 				<source src="images/video_background.mp4" type="video/mp4">
 			</video>
 			<div class="content">
@@ -169,7 +171,7 @@
 							style="float:inherit;" /></span>
 					<!-- <h1>L'intelligence qui veille.</h1> -->
 					<h4>L'intelligence artificielle qui détecte les risques de complication des patients</h4>
-					<p>Compatible avec les dossiers patients des principaux éditeurs grâce à la technologie FHIR </p>
+					<p>Compatible avec les dossiers patients des principaux éditeurs grâce à la technologie <a href="index_fr.html#Technology">FHIR</a> </p>
 				</header>
 
 			</div>
@@ -202,13 +204,13 @@
 							<span class="icon solid fa-bell fa-2x"></span>
 							<h4></h4><h4>Alerter</h4>
 							<p> Grâce à un algorithme prédictif utilisant les dernières techniques de machine learning,
-								elle alerte jusqu'à 6h avant les premiers symptômes.</p>
+								elle alerte jusqu'à 4h avant les premiers symptômes.</p>
 						</section>
 
 						<section class="col-3 col-12-medium" style="text-align:center;margin:auto">
 							<span class="icon solid fa-medkit fa-2x"></span>
 							<h4></h4><h4>Soigner</h4>
-							<p> Les professionels de santé démarrent les traitements plus tôt permettant de réduire les durées de séjour et diminuer le taux de mortalité</p>
+							<p> Les professionels de santé démarrent les traitements plus tôt permettant de réduire les durées de séjour et diminuer le taux de mortalité.</p>
 						</section>
 					</div>
 				</div>
@@ -222,7 +224,7 @@
 		<!-- Three -->
 		<section id="Solutions" class="spotlight style3 left">
 
-			<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
+			<span class="image fit main bottom"><img src="images/sepsis.jpg" alt="" /></span>
 
 
 			<div class="content">
@@ -231,7 +233,7 @@
 				</header>
 
 				<h3>Prévention SEPSIS</h3>
-				<p> L'intelligence artificielle qui détecte les premiers signes de sepsis compatible avec les principaux éditeurs de dossier médical du marché grâce à la technologie FHIR
+				<p> L'intelligence artificielle qui détecte les premiers signes de sepsis compatible avec les principaux éditeurs de dossier médical du marché grâce à la technologie <a href="index_fr.html#Technology">FHIR</a>.
 
 					<h3>Pourquoi ?</h3>
 					<p> Un algorithme précis et des alertes en temps réel permettent de réduire la durée de séjour et le taux
@@ -269,7 +271,7 @@
 						<section class="col-4 col-6-medium col-12-xsmall">
 							<span class="icon solid alt major fa-flask"></span>
 							<h3>FHIR est un écosystème</h3>
-							<p> FHIR permet l'emergence de gallerie d'application comme <a
+							<p> FHIR permet l'émergence de galerie d'application comme <a
 									href="https://gallery.smarthealthit.org">SMART on FHIR.</a> </p>
 						</section>
 						<section class="col-4 col-6-medium col-12-xsmall">
@@ -444,7 +446,7 @@
 							<span class="icon solid alt major fa-poll"></span>
 							<h3>Le résultat</h3>
 							<p>Nous mesurons les bénéfices pour votre organisation de santé dans l'objectif d'une
-								publication.
+								publication médicale.
 							</p>
 					</div>
 				</div>
@@ -501,10 +503,10 @@
 							class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
-				<li>&copy; PREVIA. Tous droits reservés.</li>
+				<p>&copy; PREVIA MEDICAL. Tous droits réservés.</>
 
-				<script type="text/javascript">document.write(new Date().getFullYear());</script>
-				<li>Langue : </li><a href="index_fr.html">Français </a><a href="index_en.html">English</a>
+				<script type="text/javascript">document.write(new Date().getFullYear());</script> 
+				<p>Langue : <a href="index_fr.html">Français </a><a href="index_en.html">English</a>  </p>
 			</ul>
 
 		</footer>
