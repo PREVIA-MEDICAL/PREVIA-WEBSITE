@@ -309,16 +309,15 @@ input, select, textarea {
 		filter:brightness(50%);
 		top: 50%;
 		left: 50%; 
-		/* width: auto; */
-		width:auto;
+		 width:auto;
 		height:auto;
 		min-height : 105%;
-		min-width : 105%;
-		 z-index: -0;
-		 transform: translateX(-50%) translateY(-55%); 
+		min-width : 105%; 
+		max-height : 60em;
+		z-index: -0;
+		transform: translateX(-50%) translateY(-55%); 
 		background-color: #272833;
-	 /* background: url('../../images/poster.jpg') no-repeat; */
-	  background-size: contain;}  
+	  	background-size: contain;}  
 	   
 	  
 
@@ -3084,7 +3083,7 @@ input, select, textarea {
 		background-color: var(--main-bg-color);
 		 margin-left:-8px;
 		margin-top:-8px; 
-		height: 80vh;
+		height: 40em; 
 		width: auto;
 		overflow: hidden;
 		position: relative;
@@ -3174,7 +3173,7 @@ input, select, textarea {
 			/*background-image: url("images/overlay.png");*/
 			content: '';
 			display: block;
-			height: 100%;
+			height: auto;
 			left: 0;
 			top: 0;
 			width: 100%;
@@ -3232,7 +3231,7 @@ input, select, textarea {
 		}
 
 		.spotlight.bottom .content {
-			border-top-width: 0.10em;
+			border-top-width: 0em;
 			border-bottom-width: 0em;
 			border-left-width: 0em;
 			border-right-width: 0em;
@@ -3244,12 +3243,15 @@ input, select, textarea {
 			padding: 6em 3em;
 			top: 0;
 			width: 28em;
+			border-top-width: 0em;
+			border-bottom-width: 0em;
 		}
 
 		.spotlight.left .content {
 			border-right-width: 0.35em;
 			border-left-width: 0em;
 			left: 0;
+			
 		}
 
 		.spotlight.right .content {
@@ -3573,12 +3575,12 @@ input, select, textarea {
 
 	#banner {
 		/* background-attachment: fixed; */
-		/* background-color: var(--main-bg-color); */
+		background-color: var(--main-bg-color);
 		/* background-image: url("../../images/pic01.jpg"); */
 		/* background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25); */
-		 min-height: 100vh;
+		 min-height: 50em;
 		position: relative; 
 		text-align: center;
 		z-index: 21; 
@@ -3587,7 +3589,7 @@ input, select, textarea {
 		#banner:before {
 			content: '';
 			display: inline-block;
-			height: 100vh;
+			height: 100%;
 			vertical-align: middle;
 			width: 1%;
 		}
@@ -3770,9 +3772,13 @@ input, select, textarea {
 				font-size: 11pt;
 				font-weight: 400;
 			}
+
+
 			.spotlight.left .content, .spotlight.right .content {
 				padding: 4.5em 2.5em;
+                
 				width: 25em;
+				height:40em;
 			}
 
 		/* Wrapper */
@@ -3809,6 +3815,7 @@ input, select, textarea {
 			}
 
 		/* Spotlight */
+		
 
 			.spotlight.top .content {
 				padding: 3.825em 0 1.825em 0;
@@ -3903,6 +3910,7 @@ input, select, textarea {
 					text-align: center;
 					top: auto !important;
 					width: 100% !important;
+					
 				}
 
 					 .spotlight .content ul.actions {
