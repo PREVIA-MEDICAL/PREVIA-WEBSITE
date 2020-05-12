@@ -91,6 +91,8 @@ input, select, textarea {
 	:root {
 		--main-bg-color: #F8F8F8;
 		--main-font-color: #333;
+		/* --main-font-p: #616263;  */
+		 --main-font-p: #616263;  
 		--spot-bg-color: rgba(248, 248, 248, 0.95);
 		}
 
@@ -115,8 +117,9 @@ input, select, textarea {
 		:root {
 		--main-bg-color: #333;
 		--main-font-color: white;
+		--main-font-p : #d1d3d4;
 		--spot-bg-color: rgba(23, 24, 32, 0.85);
-
+       
 		} 
 
 		/* .spotlight .image_couleur { display: none } */
@@ -188,7 +191,7 @@ input, select, textarea {
 
 		p, li {
 			margin: 0 0 2em 0;
-			color:#616263;
+			color:var(--main-font-p);
 			font-weight: 400;
 			font-size: 10pt;
 		}
@@ -4073,7 +4076,7 @@ input, select, textarea {
 		/* Spotlight */
 
 			.spotlight {
-				box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
+				/* box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25); */
 			}
 
 				.spotlight .image.main {
@@ -4100,7 +4103,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
+				/* box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25); */
 				min-height: calc(100vh - 44px);
 			}
 
