@@ -313,7 +313,7 @@ input, select, textarea {
 		height:auto;
 		min-height : 105%;
 		min-width : 105%; 
-		max-height : 60em;
+		max-height : 70em;
 		z-index: -0;
 		transform: translateX(-50%) translateY(-55%); 
 		background-color: #272833;
@@ -3580,7 +3580,8 @@ input, select, textarea {
 		/* background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25); */
-		 min-height: 50em;
+		 min-height: 52em;
+		 height:auto;
 		position: relative; 
 		text-align: center;
 		z-index: 21; 
