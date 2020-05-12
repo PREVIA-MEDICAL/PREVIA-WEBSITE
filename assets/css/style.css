@@ -309,15 +309,13 @@ input, select, textarea {
 		filter:brightness(50%);
 		top: 50%;
 		left: 50%; 
-		width: auto;
-		height:110%;
+		/* width: auto; */
+		width:auto;
+		height:auto;
+		min-height : 105%;
+		min-width : 105%;
 		 z-index: -0;
 		 transform: translateX(-50%) translateY(-55%); 
-
-	
-
-	    
-		 
 		background-color: #272833;
 	 /* background: url('../../images/poster.jpg') no-repeat; */
 	  background-size: contain;}  
@@ -3876,6 +3874,8 @@ input, select, textarea {
 				/* font-weight: 100; */
 			}
 
+			
+
 		/* Spotlight */
 
 			.spotlight {
@@ -4039,6 +4039,19 @@ input, select, textarea {
 			header.major {
 				margin: 0 0 2em 0;
 			}
+
+			video {
+				position: absolute;
+				filter:brightness(50%);
+				top: 50%;
+				left: 50%; 
+				width: auto;
+				height:105%;
+				 z-index: -0;
+				 transform: translateX(-50%) translateY(-55%); 
+				background-color: #272833;
+			 /* background: url('../../images/poster.jpg') no-repeat; */
+			  background-size: contain;}  
 
 		/* Goto Next */
 
