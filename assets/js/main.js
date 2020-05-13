@@ -56,8 +56,8 @@
 				'<div id="navPanel">' +
 					'<nav>' +
 						$('#nav').navList() +
-					'</nav>' + '<a href="index_fr.html" title="Français"><span class="image_fr"><img src="images/france.png" width="20" alt="UK flag" style="float:left;margin-left:+10px;" /></span> </a>'
-				+ '<a href="index_en.html" title="English"><span class="image_uk"><img src="images/uk.png" width="20" alt="UK flag" style="float:left;margin-left:+10px;" /></span> </a>' + '</div>'
+					'</nav>' + '<a href="index_fr.html" title="Français"><span class="image_fr"><img src="images/france.png" width="20" alt="UK flag" style="float:left;margin-top:+10px;" /></span> </a>'
+				+ '<a href="index_en.html" title="English"><span class="image_uk"><img src="images/uk.png" width="20" alt="UK flag" style="float:left;margin-left:-20px;margin-top:+50px;" /></span> </a>' + '</div>'
 			)
 				.appendTo($body)
 				.panel({
