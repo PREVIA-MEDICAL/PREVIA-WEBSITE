@@ -13,7 +13,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video, {
+section, summary, time, mark, audio, {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -162,6 +162,8 @@ input, select, textarea {
 			font-weight: 100;
 			line-height: 1.7em;
 			letter-spacing: 0px;
+			margin:0px;
+			padding:0px;
 		}
 
 		a {
@@ -307,20 +309,7 @@ input, select, textarea {
 			text-align: right;
 		}
 
-		 video {
-		position: absolute;
-		filter:brightness(50%);
-		top: 50%;
-		left: 50%; 
-		 width:auto;
-		height:auto;
-		min-height : 105%;
-		min-width : 105%; 
-		max-height : 70em;
-		z-index: -0;
-		transform: translateX(-50%) translateY(-55%); 
-		background-color: #272833;
-	  	background-size: contain;}  
+		 
 	   
 	  
 
@@ -637,11 +626,11 @@ input, select, textarea {
 			opacity: 0;
 			z-index: -1;
 		}
-	}
+	}*/
 
-	body.landing {
+	 body.landing {
 		text-decoration: none;
-	}
+	} 
 
 		body.landing:before {
 			-moz-osx-font-smoothing: grayscale;
@@ -722,13 +711,13 @@ input, select, textarea {
 			line-height: 2.025em;
 		}
 
-	} */
+	} 
 
 /* Container */
 
 	.container {
 		margin: 0 auto;
-		max-width: calc(100% - 4em);
+		/* max-width: calc(100% - 4em); */
 		width: 70em;
 	}
 
@@ -2489,7 +2478,7 @@ input, select, textarea {
 
 	.box {
 		border-radius: 4px;
-		border: solid 1px rgba(255, 255, 255, 0.3);
+		/* border: solid 1px rgba(255, 255, 255, 0.3); */
 		margin-bottom: 2em;
 		padding: 1.5em;
 	}
@@ -3084,8 +3073,8 @@ input, select, textarea {
 		background-position: center center;
 		background-size: cover !important;
 		background-color: var(--main-bg-color);
-		 margin-left:-8px;
-		margin-top:-8px; 
+		 /* margin-left:-8px;
+		margin-top:-8px;  */
 		height: 40em; 
 		width: auto;
 		overflow: hidden;
@@ -3580,25 +3569,44 @@ input, select, textarea {
 		/* background-attachment: fixed; */
 		background-color: var(--main-bg-color);
 		/* background-image: url("../../images/pic01.jpg"); */
-		/* background-position: center center;
+		background-position: center center; 
 		background-size: cover;
-		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25); */
-		 min-height: 52em;
-		 height:auto;
+		/* box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);  */
+	
+		 min-height: 55em;
+		 height:100%;
+		 width:100%;
 		position: relative; 
 		text-align: center;
 		z-index: 21; 
 	}
 
-		#banner:before {
+		/* #banner:before {
 			content: '';
 			display: inline-block;
 			height: 100%;
 			vertical-align: middle;
 			width: 1%;
-		}
+		} */
 
+		#banner video {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			min-width: 100%; 
+			min-height: 100%;
+			filter:brightness(50%);
+	
+			/* top: 60%;
+			left: 50%;  */
 		
+			/* min-height : 105%;
+			min-width : 105%; 
+			max-height : 70em; */
+			/* z-index: -0; */
+			/* transform: translateX(-50%) translateY(-55%);  */
+			background-color: #272833;
+			}  
 
 		#banner .content {
 			display: inline-block;
