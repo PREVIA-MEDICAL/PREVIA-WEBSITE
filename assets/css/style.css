@@ -89,11 +89,11 @@ input, select, textarea {
 	}
 
 	:root {
-		--main-bg-color: #F8F8F8;
+		--main-bg-color: #FFFFFF;
 		--main-font-color: #333;
 		/* --main-font-p: #616263;  */
 		 --main-font-p: #616263;  
-		--spot-bg-color: rgba(248, 248, 248, 0.95);
+		--spot-bg-color: rgba(248, 248, 248, 0.925);
 		}
 
 		html {
@@ -3211,8 +3211,8 @@ input, select, textarea {
 		}
 
 		.spotlight.top .content, .spotlight.bottom .content {
-			left: 0;
-			padding: 1em 0 1em 0;
+			 margin-left: 1em; 
+			padding: 2em 1em 1em 0;
 			width: 100%;
 		}
 
