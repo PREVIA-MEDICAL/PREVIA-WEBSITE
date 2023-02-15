@@ -5,7 +5,7 @@
 <head>
 	<title>PREVIA : detect sepsis onset</title>
 	<meta name="Description"
-		content="FHIR applications to help healthcare organizations detect sepsis onset and achieve their prevention objectives." />
+		content="FHIR applications to help healthcare organizations detect sepsis onset" />
 	<meta charset=" utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/style.css" />
@@ -123,16 +123,15 @@
 				<ul>
 					<li><a href="index_en.html#Mission">Mission</a></li>
 					<li>
-						<a href="index_en.html#Solutions">Solutions</a>
-						<ul>
-							<li><a href="sepsis.html">Sepsis</a></li>
-						</ul>
+						<a href="index_en.html#SEPSI-SCORE">Sepsis</a>
+						<!-- <ul>
+							<li><a href="sepsis_fr.html">Sepsi-score</a></li>
+						</ul> -->
 					</li>
+					<li><a href="index_en.html#Team">Team</a></li>
+					<li><a href="index_en.html#News">News</a></li>
+					<li><a href="index_en.html#Partners">Partners</a></li>
 					<li><a href="index_en.html#Technology">Technology</a></li>
-					<li><a href="index_en.html#Interview">Interview</a></li>
-					<li><a href="index_fr.html#Partners">Partners</a></li>
-
-
 					<li><a href="index_en.html#Contact" class="button primary">Contact</a></li>
 				</ul>
 			</nav>
@@ -159,15 +158,20 @@
 				<header>
 					<span class="image"><img src="images/logo_previa_blanc.png" width="250" alt=""
 							style="float:inherit;" /></span>
-					<!-- <h1>L'intelligence qui veille.</h1> -->
-					<h4>Artificial Intelligence detecting patients complication risks</h4>
-					<p>Compatible with all major EHR systems thanks to the technology <a
-							href="index_en.html#Technology">FHIR</a> </p>
+					<h1>Artificial Intelligence preventing sepsis</h1>
+					<!-- <p>PREVIA MEDICAL, start-up deeptech spécialisée dans le développement d’outils de médecine prédictive depuis 2020 à Lyon, a développé SEPSI-SCORE©, une solution d’intelligence artificielle, pour analyser en temps réel les données du dossier médical et les antécédents du patient et prédire les risques de survenue d’un sepsis. L’objectif est de réduire la durée de séjour à l’hôpital et le taux de mortalité en lien avec le sepsis. <a
+								href="index_fr.html#Technology">FHIR</a> </p> -->
+					<!-- 
+								<p>	Compatible avec les dossiers patients des principaux éditeurs grâce à la technologie <a
+							href="index_fr.html#Technology">FHIR</a> </p> -->
 				</header>
 
 			</div>
-			<a href="#Mission" class="goto-next scrolly">Next</a>
+			<!-- <a href="#Mission" class="goto-next scrolly">Next</a> -->
 		</section>
+
+		
+
 
 		<!-- One -->
 		<section id="Mission" class="wrapper style1 right">
@@ -181,67 +185,258 @@
 						<section class="col-3 col-12-medium" style="text-align:center; margin:auto">
 
 							<!-- <div class="image"><img src="images/logo.png" width="200" alt="" /></div> -->
-							<div class="image_couleur float-center"><img src="images/logo_312_color.png" width="200"
+							<div class="image_couleur float-center"><img src="images/logo_312_color.png" width="100%"
 									alt="" /></div>
 
+						</section>
+						<section class="col-3 col-12-medium" style="text-align:center;margin:auto">
+							<span class="icon solid fa-chart-bar fa-2x"></span>
+							<h4></h4>
+							<h4>Analyze</h4>
+							<p>Compatible with the major EHR systems thanks to the technology <a
+									href="index_fr.html#Technology">FHIR</a> , SEPSI-SCORE © analyzes in real time
+									laboratory results, vital signs and medical history.
+							</p>
 						</section>
 						<section class="col-3 col-12-medium" style="text-align:center;margin:auto">
 							<span class="icon solid fa-search fa-2x"></span>
 							<h4></h4>
 							<h4>Detect</h4>
-							<p>PREVIA analyzes the data of thousands of patients in real time and accurately identifies
-								the complications risks.
+							<p> Certified as a medical device in 2021, SEPSI-SCORE © identifies the risks of sepsis
+								thanks to a predictive algorithm using the latest machine learning techniques
 							</p>
 						</section>
 						<section class="col-3 col-12-medium" style="text-align:center;margin:auto">
 							<span class="icon solid fa-bell fa-2x"></span>
 							<h4></h4>
 							<h4>Alert</h4>
-							<p> Thanks to a predictive algorithm using the latest machine learning techniques, it alerts
-								up to 48 hours before the first symptoms.</p>
-						</section>
-
-						<section class="col-3 col-12-medium" style="text-align:center;margin:auto">
-							<span class="icon solid fa-medkit fa-2x"></span>
-							<h4></h4>
-							<h4>Care</h4>
-							<p> By delivering accurate alerts in real-time, PREVIA allows clinicians to intervene early,
-								leading to improved care outcomes.</p>
+							<p> By delivering accurate alerts in real-time, it allows clinicians to intervene early,
+								leading to improved care outcomes</p>
 						</section>
 					</div>
 				</div>
 			</div>
-			<a href="#Solutions" class="goto-next scrolly">Next</a>
+			<!-- <a href="#SEPSI-SCORE" class="goto-next scrolly">Next</a> -->
 		</section>
 
 		<!-- Two -->
 		<span class="image fit main bottom"><img src="images/screenshot.jpg" alt="" /></span>
 
 		<!-- Three -->
-		<section id="Solutions" class="spotlight style3 left">
+		<section id="SEPSI-SCORE" class="spotlight style3 right">
 
 			<span class="image fit main bottom"><img src="images/sepsis.jpg" alt="" /></span>
 
 
 			<div class="content">
 				<header>
-					<h2>Solutions</h2>
+					<h2>Sepsis</h2>
+				</header>
+				<!-- 
+				<h3>Le SEPSIS ?</h3> -->
+				<p> Sepsis is a generalized inflammatory response associated with an infection.
+					If it occurs after an invasive procedure, it is called nosocomial infection. Sepsis can be
+					caused by bacteria or certain viruses (SARS-Cov2, H1N1 influenza...).
+					Currently, sepsis is responsible for 60,000 deaths per year in France and represents 1 in 5 deaths
+					in the world. Each hour of delay in diagnosis reduces the patient's chances of survival by 7%.</p>
+
+				<p> With a 30-day mortality rate of 20-30%*, sepsis is one of the leading causes of death
+					in hospitals around the world.</p>
+
+				<p> Accurate algorithm and real-time alerts reduce length of stay and
+					rate
+					mortality rate significantly.
+				<h5>* The association between four scoring systems and 30-day mortality among intensive care patients
+					with sepsis: a cohort study - Nature, Mai 2021
+				</h5>
+				<!-- <ul class="actions">
+					<li><a href="sepsis_fr.html" class="button">En savoir plus</a></li>
+				</ul> -->
+			</div>
+			<!-- <a href="#Technology" class="goto-next scrolly">Next</a> -->
+		</section>
+
+		<section id="Team" class="wrapper style1 special fade-up">
+			<div class="x">
+				<header class="major">
+					<h2>Team</h2>
 				</header>
 
-				<h3>Sepsis prevention</h3>
-				<p> We are building a solution forecasting sepsis onset working with every EHR thanks to the technology
-					<a href="index_en.html#Technology">FHIR.</a>.
-
-				<h3>Why it matters?</h3>
-				<p> An accurate algorithm and real time alerts can significantly reduce length of stay and Sepsis
-					mortality.
-
-				<ul class="actions">
-					<li><a href="sepsis.html" class="button">Read More</a></li>
-				</ul>
 			</div>
-			<a href="#Project" class="goto-next scrolly">Next</a>
 		</section>
+		
+
+
+			<div class="content">
+
+				<div class="box alt">
+					<div class="row gtr-uniform">
+						<section class="col-2 col-12-medium" style="text-align:center;margin:auto">
+							<div class="image team"><img src="images/quentin.jpg" width="200" alt="" /></div>
+							<h4>Quentin FRANCOIS</h4><p> CEO & Co-founder</p>
+						</section>
+						<section class="col-2 col-12-medium" style="text-align:center;margin:auto">
+
+							
+							<div class="image team"><img src="images/bart.jpg" width="200" alt="" /></div>
+							<h4>Barthélémy ARRIBE</h4><p> CTO & Co-founder</p>
+						</section>
+						<section class="col-2 col-12-medium" style="text-align:center;margin:auto">
+
+							
+							<div class="image team"><img src="images/thiboud.jpg" width="200" alt="" /></div>
+							<h4>Pierre-Elliott THIBOUD</h4><p> Data Scientist</p>
+						</section>
+						<section class="col-2 col-12-medium" style="text-align:center;margin:auto">
+
+							
+							<div class="image team"><img src="images/lionel.jpg" width="200" alt="" /></div>
+							<h4>Lionel MANZETTI</h4><p> Software engineer</p>
+						</section>
+						<section class="col-2 col-12-medium" style="text-align:center;margin:auto">
+
+							
+							<div class="image team"><img src="images/axel.jpg" width="200" alt="" /></div>
+							<h4>Axel JORON</h4><p> Software engineer</p>
+						</section>
+
+						
+					</div>
+				</div>
+			</div>
+			<!-- <a href="#SEPSI-SCORE" class="goto-next scrolly">Next</a> -->
+		</section>
+		<section id="Team" class="wrapper style1 special fade-up">
+			<div class="x">
+				<header class="major">
+					<h2>The strategic board</h2>
+				</header>
+
+			</div>
+		</section>
+
+		<section id="Mission">
+
+
+			<div class="content">
+
+				<div class="box alt">
+					<div class="row gtr-uniform">
+
+						<section class="col-4 col-12-medium" style="text-align:center;margin:auto">
+							<div class="image team"><img src="images/aymeri.jpg" width="200" alt="" /></div>
+							<h4>Aymeri CHOMEL</h4>
+							<p> President Veymont participations</p>
+						</section>
+						<section class="col-4 col-12-medium" style="text-align:center;margin:auto">
+
+							<div class="image team"><img src="images/ziad.jpg" width="200" alt="" /></div>
+							<h4>Ziad WAKIM</h4>
+							<p> President HOPLA MEMORY</p>
+						</section>
+						<section class="col-4 col-12-medium" style="text-align:center;margin:auto">
+
+
+							<div class="image team"><img src="images/xavier.jpg" width="200" alt="" /></div>
+							<h4>Xavier BADICHE</h4>
+							<p> President BLITZ </p>
+						</section>
+
+						<section class="col-6 col-12-medium" style="text-align:center;margin:auto">
+
+
+							<div class="image team"><img src="images/sandra.jpg" width="200" alt="" /></div>
+							<h4>Sandra DUBOS</h4>
+							<p> Investment director KREAXI</p>
+							<p> « The management team’s approach, as well as its decision to develop a solution for sepsis, a complex disease, have impressed me most about the Previa Medical project. There is a real medical need to improve monitoring, prediction and diagnosis. This solution is completely agnostic and can be used for any patient who might be at risk of developing sepsis»</p>
+						</section>
+				
+						<section class="col-6 col-12-medium" style="text-align:center;margin:auto">
+
+
+							<div class="image team"><img src="images/florence.jpg" width="200" alt="" /></div>
+							<h4>Florence THUEUX</h4>
+							<p> President M2CARE</p>
+							<p> « M2care’s decision to invest in Previa Medical was based on its highly skilled founders and their vision to develop viable applications for predictive medicine that will benefit patients and healthcare professionals alike. Our team of entrepreneurs in residence are convinced this solution has real potential » </p>
+						</section>
+					
+					</div>
+				</div>
+			</div>
+			<!-- <a href="#SEPSI-SCORE" class="goto-next scrolly">Next</a> -->
+		</section>
+		<section id="News" class="wrapper style1 special fade-up">
+			<div class="x">
+				<header class="major">
+					<h2>News</h2>
+				</header>
+
+			</div>
+		</section>
+
+		<section id="news0" class="wrapper style2 ">
+
+			<span class="image fit main bottom"><img src="images/levee.jpg" alt="" /></span>
+
+			<div class="content" style="text-align:center;margin:auto">
+				<header>
+					<h2>Fundraising</h2>
+				</header>
+				<p> Lyon, France, February 16, 2023 , Previa Medical raises €2.1 million for AI solution to prevent sepsis
+				
+				</p>
+				<a href="" class="button" style="text-align:center;margin:auto">Watch the board presentation</a>
+			</div>
+			
+		</section>
+
+	
+
+		<section id="news1" class="wrapper style1 special fade-up">
+
+			<span class="image fit main bottom"><img src="images/medica.jpg" alt="" /></span>
+
+
+			<div class="content">
+				<header>
+					<h2>MEDICA</h2>
+				</header>
+				<p> In November 2022, PREVIA MEDICAL presented its solution at the international MEDICA exhibition in Düsseldorf, Germany</p>
+			</div>
+			<!-- <a href="#Partners" class="goto-next scrolly">Next</a> -->
+		</section>
+	
+
+		<section id="news2" class="wrapper style1 special fade-up">
+
+			<span class="image fit main bottom"><img src="images/bsmart_previa_interview.jpg" alt="" /></span>
+
+
+			<div class="content">
+				<header>
+					<h2>Interview</h2>
+				</header>
+				<p>  On Wednesday 9 June 2021, Michel Denisot interviewed Quentin François, the founder of PREVIA MEDICAL
+					in
+					LE GRAND ENTRETIEN..</p>
+
+
+			<a href="https://www.bsmart.fr/video/6687-le-grand-entretien-emission-09-juin-2021"
+							class="button">Watch the interview</a>
+			</div>
+			<!-- <a href="#Partners" class="goto-next scrolly">Next</a> -->
+		</section>
+
+		<section id="Partners" class="wrapper style1 special fade-up">
+			<div class="x">
+				<header class="major">
+					<h2>Nos partenaires</h2>
+				</header>
+				<span class="image fit main bottom"><img src="images/partners.jpg" alt="" /></span>
+			</div>
+		</section>
+
+
 		<section id="Technology" class="wrapper style1 special fade-up">
 
 			<div class="x">
@@ -307,31 +502,31 @@
 						data.addColumn('number', 'Value');
 						data.addColumn({ type: 'string', role: 'tooltip' }); var ivalue = new Array();
 
-						data.addRows([[{ v: 'US', f: 'United States of America' }, 0, '517 Projects']]);
+						data.addRows([[{ v: 'US', f: 'United States of America' }, 0, '1143 Projects']]);
 						ivalue['US'] = '';
 
-						data.addRows([[{ v: 'GB', f: 'United Kingdom' }, 1, '133 Projects']]);
+						data.addRows([[{ v: 'GB', f: 'United Kingdom' }, 1, '306 Projects']]);
 						ivalue['GB'] = '';
 
-						data.addRows([[{ v: 'DE', f: 'Germany' }, 2, '471 Projects']]);
+						data.addRows([[{ v: 'DE', f: 'Germany' }, 2, '1092 Projects']]);
 						ivalue['DE'] = '';
 
-						data.addRows([[{ v: 'FR', f: 'France' }, 3, '40 Projects']]);
+						data.addRows([[{ v: 'FR', f: 'France' }, 3, '107 Projects']]);
 						ivalue['FR'] = '';
 
-						data.addRows([[{ v: 'ES', f: 'Spain' }, 4, '33 Projects']]);
+						data.addRows([[{ v: 'ES', f: 'Spain' }, 4, '92 Projects']]);
 						ivalue['ES'] = '';
 
-						data.addRows([[{ v: 'CA', f: 'Canada' }, 5, '122 Projects']]);
+						data.addRows([[{ v: 'CA', f: 'Canada' }, 5, '306 Projects']]);
 						ivalue['CA'] = '';
 
-						data.addRows([[{ v: 'IT', f: 'Italy' }, 6, '25 Projects']]);
+						data.addRows([[{ v: 'IT', f: 'Italy' }, 6, '63 Projects']]);
 						ivalue['IT'] = '';
 
-						data.addRows([[{ v: 'NL', f: 'The Netherlands' }, 7, '170 Projects']]);
+						data.addRows([[{ v: 'NL', f: 'The Netherlands' }, 7, '306 Projects']]);
 						ivalue['NL'] = '';
 
-						data.addRows([[{ v: 'BR', f: 'Brazil' }, 8, '21 Projects']]);
+						data.addRows([[{ v: 'BR', f: 'Brazil' }, 8, '108 Projects']]);
 						ivalue['BR'] = '';
 
 						data.addRows([[{ v: 'TR', f: 'Turkey' }, 9, '5 Projects']]);
@@ -340,7 +535,7 @@
 						data.addRows([[{ v: 'IN', f: 'India' }, 10, '102 Projects']]);
 						ivalue['IN'] = '';
 
-						data.addRows([[{ v: 'RU', f: 'Russia' }, 11, '18 Projects']]);
+						data.addRows([[{ v: 'RU', f: 'Russia' }, 11, '32 Projects']]);
 						ivalue['RU'] = '';
 
 						data.addRows([[{ v: 'AU', f: 'Australia' }, 12, '51 Projects']]);
@@ -355,18 +550,18 @@
 						data.addRows([[{ v: 'CL', f: 'Chile' }, 15, '61 Projects']]);
 						ivalue['AU'] = '';
 
-						data.addRows([[{ v: 'CH', f: 'Switzerland' }, 16, '25 Projects']]);
+						data.addRows([[{ v: 'CH', f: 'Switzerland' }, 16, '61 Projects']]);
 						ivalue['AU'] = '';
 
-						data.addRows([[{ v: 'SE', f: 'Sweden' }, 17, '89 Projects']]);
-						ivalue['AU'] = '';
-
-
-						data.addRows([[{ v: 'NO', f: 'Norway' }, 18, '62 Projects']]);
+						data.addRows([[{ v: 'SE', f: 'Sweden' }, 17, '114 Projects']]);
 						ivalue['AU'] = '';
 
 
-						data.addRows([[{ v: 'FI', f: 'Finland' }, 19, '36 Projects']]);
+						data.addRows([[{ v: 'NO', f: 'Norway' }, 18, '75 Projects']]);
+						ivalue['AU'] = '';
+
+
+						data.addRows([[{ v: 'FI', f: 'Finland' }, 19, '58 Projects']]);
 						ivalue['AU'] = '';
 
 						var options1 = {
@@ -410,7 +605,7 @@
 				<div align="center">
 					<div id='visualization' style="width: 80%;"></div>
 				</div>
-				<strong>FHIR PROJECTS AROUND THE WORLD in 2021
+				<strong>FHIR PROJECTS AROUND THE WORLD in 2023
 				</strong>
 				<p>(Source : <a href="https://simplifier.net">Simplifier.NET)</a></p>
 				<footer class="major">
@@ -420,37 +615,6 @@
 				</footer>
 			</div>
 		</section>
-
-		<section id="Interview" class="spotlight style3 bottom">
-
-			<span class="image fit main bottom"><img src="images/bsmart_previa_interview.jpg" alt="" /></span>
-
-
-			<div class="content">
-				<header>
-					<h2>Interview</h2>
-				</header>
-				<p> On Wednesday 9 June 2021, Michel Denisot interviewed Quentin François, the founder of PREVIA MEDICAL
-					in
-					LE GRAND ENTRETIEN.
-
-
-				<ul class="actions">
-					<li><a href="https://www.bsmart.fr/video/6687-le-grand-entretien-emission-09-juin-2021"
-							class="button">Watch the interview</a></li>
-				</ul>
-			</div>
-			<a href="#Partners" class="goto-next scrolly">Next</a>
-		</section>
-		<section id="Partners" class="wrapper style1 special fade-up">
-			<div class="x">
-				<header class="major">
-					<h2>Our partners</h2>
-				</header>
-				<span class="image fit main bottom"><img src="images/partners.jpg" alt="" /></span>
-			</div>
-		</section>
-
 
 
 		<!-- Five -->
@@ -476,7 +640,7 @@
 							class="label">Email</span></a></li>
 			</ul>
 			<ul class="copyright">
-				<p>&copy; PREVIA MEDICAL. All Rights Reserved.</>
+				<p>&copy; PREVIA MEDICAL. All Rights Reserved</>
 
 					<script type="text/javascript">document.write(new Date().getFullYear());</script>
 				<p>Langue : <a href="index_fr.html">Français </a><a href="index_en.html">English</a> </p>
@@ -485,7 +649,6 @@
 		</footer>
 
 	</div>
-
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
